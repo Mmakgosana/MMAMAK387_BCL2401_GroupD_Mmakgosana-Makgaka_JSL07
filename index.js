@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       certificateContent.innerHTML = `
       <h1>Certificate of Achievement</h1>
       <p>This is to certifu that</p>
+      <h2>${studentName}</h2>
 
       <h3>${studentName}</h3>
     `;
