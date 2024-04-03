@@ -12,12 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = document.getElementById('personalMessage'); //Assume that you have input field with an id
-  
-      const studentName = studentNameInput.value;
-      const personalMessage = personalMessageInput.value;
-      const courseNameInput = document.getElementById('courseName'); // Fallback to "a course" if no input
-  
+    const personalMessageInput = document.getElementById('personalMessage');
+    const courseNameInput = document.getElementById('courseName');  
+
+    const studentName = studentNameInput.value;
+    const personalMessage = personalMessageInput.value;
+    const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
+
       if (studentName.trim() === '' || personalMessage.trim() === '') {
         alert('Please fill in all fields');
         return;
