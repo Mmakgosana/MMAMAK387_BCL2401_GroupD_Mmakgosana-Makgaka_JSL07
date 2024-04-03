@@ -12,12 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = document.getElementById;
-      const courseNameInput = ; 
+      const personalMessageInput = document.getElementById('personalMessage'); //Assume that you have input field with an id
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
-      const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
+      const courseNameInput = document.getElementById('courseName'); // Fallback to "a course" if no input
   
       if (studentName.trim() === '' || personalMessage.trim() === '') {
         alert('Please fill in all fields');
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>has almost completed the</p>
       <p>${courseName}</p>
       <p>with legendary perseverance and world-class bad-assery for not giving up 🏆</p>
-      <img src="./logo.png" style="padding:25px; height:100px; alt="Codespace logo"> 
+      <img src="./logo.png" style="padding:25px; height:75px; alt="Codespace logo"> 
       <p>${personalMessage} 😻</p>
 
       
